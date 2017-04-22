@@ -21,7 +21,9 @@ exports.arraysAnswers = {
   },
 
   remove: function(arr, item) {
-
+    return arr.filter(function(el){
+      return el !== item;
+    });
   },
 
   removeWithoutCopy: function(arr, item) {
